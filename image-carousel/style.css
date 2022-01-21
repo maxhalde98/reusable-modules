@@ -8,7 +8,7 @@ html, body, button {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: darkslategrey;
     justify-content: center;
 }
 
@@ -46,3 +46,57 @@ html, body, button {
     align-items: center;
 }
 
+.curr-img {
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60vw;
+    height: calc(60vw / calc(16 / 9));
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 100;
+}
+
+.picture-img {
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60vw;
+    height: calc(60vw / calc(16 / 9));
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.slider-div {
+    position: absolute;
+    z-index: 999;
+    margin-top: calc(calc(60vw / calc(16 / 9)) - 30px);
+    margin-left: calc(30vw - 75px);
+    width: 150px;
+    /* background-color: darkslategrey; */
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-btn-off {
+    width: 15px;
+    height: 15px;
+    z-index: 999;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.slider-btn-on {
+    width: 15px;
+    height: 15px;
+    z-index: 999;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: black;
+}
